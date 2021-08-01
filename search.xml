@@ -1,9 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>我的第一篇文章</title>
+    <title>This Is My Blog</title>
     <url>/2021/07/30/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E6%96%87%E7%AB%A0/</url>
-    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h3 id="这是我的博客"><a href="#这是我的博客" class="headerlink" title="这是我的博客"></a>这是我的博客</h3><p>历经3天时间，经过无数的失败查询了无数的教程后，终于把我的博客做出来了<br>此博客现搭建在GitHub上</p>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script>]]></content>
+  </entry>
+  <entry>
+    <title>C语言</title>
+    <url>/2021/07/30/2/</url>
+    <content><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\assets\css\APlayer.min.css"><script src="\assets\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><h2 id="C语言令牌"><a href="#C语言令牌" class="headerlink" title="C语言令牌"></a>C语言令牌</h2><p>C 程序由各种令牌组成，令牌可以是关键字、标识符、常量、字符串值，或者是一个符号。<br>例如<code>printf("Hello, World! \n");</code><br>它们分别是   </p>
+<blockquote>
+<p>printf<br>(<br>“Hello, World! \n”<br>)<br>;   </p>
+</blockquote>
+<h2 id="分号"><a href="#分号" class="headerlink" title="分号 ;"></a>分号 ;</h2><p>在 C 程序中，分号是语句结束符。也就是说，每个语句必须以分号结束。它表明一个逻辑实体的结束。   </p>
+<h2 id="关键字"><a href="#关键字" class="headerlink" title="关键字"></a>关键字</h2><p>下表列出了 C 中的保留字。这些保留字不能作为常量名、变量名或其他标识符名称。  </p>
+<blockquote>
+<p>auto     声明自动变量<br>break     跳出当前循环<br>case    开关语句分支<br>char    声明字符型变量或函数返回值类型<br>const     定义常量，如果一个变量被 const 修饰，那么它的值就不能再被改变<br>continue    结束当前循环，开始下一轮循环<br>default    开关语句中的”其它”分支<br>do     循环语句的循环体<br>double     声明双精度浮点型变量或函数返回值类型<br>else    条件语句否定分支（与 if 连用）<br>enum    声明枚举类型<br>extern    声明变量或函数是在其它文件或本文件的其他位置定义<br>float    声明浮点型变量或函数返回值类型<br>for    一种循环语句<br>goto    无条件跳转语句<br>if    条件语句<br>int    声明整型变量或函数<br>long     声明长整型变量或函数返回值类型<br>register    声明寄存器变量<br>return     子程序返回语句（可以带参数，也可不带参数）<br>short    声明短整型变量或函数<br>signed    声明有符号类型变量或函数<br>sizeof    计算数据类型或变量长度（即所占字节数）<br>static     声明静态变量<br>struct    声明结构体类型<br>switch     用于开关语句<br>typedef    用以给数据类型取别名<br>unsigned    声明无符号类型变量或函数<br>union    声明共用体类型<br>void    声明函数无返回值或无参数，声明无类型指针<br>volatile    说明变量在程序执行中可被隐含地改变<br>while     循环语句的循环条件    </p>
+</blockquote>
+<h2 id="整数类型"><a href="#整数类型" class="headerlink" title="整数类型"></a>整数类型</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储大小</th>
+<th>值范围</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>char</td>
+<td>1 字节</td>
+<td>-128 到 127 或 0 到 255</td>
+</tr>
+<tr>
+<td>unsigned char</td>
+<td>1 字节</td>
+<td>0 到 255</td>
+</tr>
+<tr>
+<td>signed char</td>
+<td>1 字节</td>
+<td>-128 到 127</td>
+</tr>
+<tr>
+<td>int</td>
+<td>2 或 4 字节</td>
+<td>-32,768 到 32,767 或 -2,147,483,648 到 2,147,483,647</td>
+</tr>
+<tr>
+<td>unsigned int</td>
+<td>2 或 4 字节</td>
+<td>0 到 65,535 或 0 到 4,294,967,295</td>
+</tr>
+<tr>
+<td>short</td>
+<td>2 字节</td>
+<td>-32,768 到 32,767</td>
+</tr>
+<tr>
+<td>unsigned short2 字节</td>
+<td>0 到 65,535</td>
+</tr>
+<tr>
+<td>long</td>
+<td>4 字节</td>
+<td>-2,147,483,648 到 2,147,483,647</td>
+</tr>
+<tr>
+<td>unsigned long</td>
+<td>4 字节</td>
+<td>0 到 4,294,967,295</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="浮点类型"><a href="#浮点类型" class="headerlink" title="浮点类型"></a>浮点类型</h2><div class="table-container">
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>存储大小</th>
+<th>值范围</th>
+<th>精度</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td>4 字节</td>
+<td>1.2E-38 到 3.4E+38</td>
+<td>6 位有效位</td>
+</tr>
+<tr>
+<td>double</td>
+<td>8 字节</td>
+<td>2.3E-308 到 1.7E+308</td>
+<td>15 位有效位</td>
+</tr>
+<tr>
+<td>long double</td>
+<td>16 字节</td>
+<td>3.4E-4932 到 1.1E+4932</td>
+<td>19 位有效位</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="C-变量"><a href="#C-变量" class="headerlink" title="C 变量"></a>C 变量</h2><p>变量其实只不过是程序可操作的存储区的名称。C 中每个变量都有特定的类型，类型决定了变量存储的大小和布局，该范围内的值都可以存储在内存中，运算符可应用于变量上。</p>
+<p>变量的名称可以由字母、数字和下划线字符组成。它必须以字母或下划线开头。大写字母和小写字母是不同的，因为 C 是大小写敏感的，C 语言也允许定义各种其他类型的变量，比如枚举、指针、数组、结构、共用体等等.   </p>
+<h2 id="C-中的变量定义"><a href="#C-中的变量定义" class="headerlink" title="C 中的变量定义"></a>C 中的变量定义</h2><p>变量定义就是告诉编译器在何处创建变量的存储，以及如何创建变量的存储。变量定义指定一个数据类型，并包含了该类型的一个或多个变量的列表，如下所示：<br><code>type variable_list;</code><br>在这里，type 必须是一个有效的 C 数据类型，可以是 char、w_char、int、float、double 或任何用户自定义的对象，variable_list 可以由一个或多个标识符名称组成，多个标识符之间用逗号分隔。下面列出几个有效的声明：<br><code>int    i, j, k;</code><br><code>char   c, ch;</code><br><code>float  f, salary;</code><br><code>double d;</code><br>行 int i, j, k; 声明并定义了变量 i、j 和 k，这指示编译器创建类型为 int 的名为 i、j、k 的变量。</p>
+<p>变量可以在声明的时候被初始化（指定一个初始值）。初始化器由一个等号，后跟一个常量表达式组成，如下所示：<br><code>type variable_name = value;</code><br>下面列举几个实例：<br><code>extern int d = 3, f = 5;    // d 和 f 的声明与初始化</code><br><code>int d = 3, f = 5;           // 定义并初始化 d 和 f</code><br><code>byte z = 22;                // 定义并初始化 z</code><br><code>char x = 'x';               // 变量 x 的值为 'x'</code><br>不带初始化的定义：带有静态存储持续时间的变量会被隐式初始化为 NULL（所有字节的值都是 0），其他所有变量的初始值是未定义的。   </p>
+<h2 id="C-中的变量声明"><a href="#C-中的变量声明" class="headerlink" title="C 中的变量声明"></a>C 中的变量声明</h2><p>变量声明向编译器保证变量以指定的类型和名称存在，这样编译器在不需要知道变量完整细节的情况下也能继续进一步的编译。变量声明只在编译时有它的意义，在程序连接时编译器需要实际的变量声明。</p>
+<p>变量的声明有两种情况:   </p>
+<ul>
+<li>1、一种是需要建立存储空间的。例如：int a 在声明的时候就已经建立了存储空间.    </li>
+<li>2、另一种是不需要建立存储空间的，通过使用extern关键字声明变量名而不定义它。 例如：extern int a 其中变量 a 可以在别的文件中定义的。    </li>
+<li><p>除非有extern关键字，否则都是变量的定义。<br><code>extern int i; //声明，不是定义</code><br><code>int i; //声明，也是定义</code>   </p>
+<h2 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h2><pre><code>  #include &lt;stdio.h&gt;
+
+  // 函数外定义变量 x 和 y
+  int x;
+  int y;
+  int addtwonum()
+  {
+  // 函数内声明变量 x 和 y 为外部变量
+  extern int x;
+  extern int y;
+  // 给外部变量（全局变量）x 和 y 赋值
+  x = 1;
+  y = 2;
+  return x+y;
+  }
+
+  int main()
+  {
+  int result;
+  // 调用函数 addtwonum
+  result = addtwonum();
+
+  printf("result 为: %d",result);
+  return 0;
+  }   
+</code></pre><p>它会产生下列结果：<br><code>result 为: 3</code></p>
+</li>
+</ul>
 ]]></content>
+      <tags>
+        <tag>C语言</tag>
+      </tags>
   </entry>
 </search>
