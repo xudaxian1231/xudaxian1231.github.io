@@ -1,1 +1,0 @@
-<script src="https://cdn.jsdelivr.net/gh/Sanarous/files@1.151/js/clicksocialvalue.js"></script>
